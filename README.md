@@ -5,4 +5,4 @@ Repository ini merupakan project Mata Kuliah Proyek IV, beranggotakan 6 orang ya
 3. Jihan Afifah Yanriyani
 4. Adhitia Zain Nurizki (201511034)
 5. Irfan Pertrio Nugroho
-6. Salma Aulia Suherman
+6. Salma Aulia Suherman (201511060)
