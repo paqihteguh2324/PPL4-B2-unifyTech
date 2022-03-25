@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pegawais",
+  "info": {
+    "singularName": "pegawai",
+    "pluralName": "pegawais",
+    "displayName": "pegawai",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "nip": {
+      "type": "string"
+    },
+    "religion": {
+      "type": "string"
+    },
+    "pendidikan": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "tempat_lahir": {
+      "type": "string"
+    },
+    "tanggal_lahir": {
+      "type": "date"
+    },
+    "nomor_hp": {
+      "type": "biginteger"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "id_penguji": {
+      "type": "integer"
+    },
+    "jabatan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::jabatan.jabatan",
+      "inversedBy": "pegawais"
+    },
+    "direktorat": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::direktorat.direktorat",
+      "inversedBy": "pegawais"
+    },
+    "unit": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::unit.unit",
+      "inversedBy": "pegawais"
+    },
+    "divisi": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::divisi.divisi",
+      "inversedBy": "pegawais"
+    },
+    "bidang": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bidang.bidang",
+      "inversedBy": "pegawais"
+    },
+    "sub_bidang": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sub-bidang.sub-bidang",
+      "inversedBy": "pegawais"
+    },
+    "grade": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::grade.grade",
+      "inversedBy": "pegawais"
+    },
+    "jenjang": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::jenjang.jenjang",
+      "inversedBy": "pegawais"
+    },
+    "pegawais": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pegawai.pegawai",
+      "mappedBy": "pegawai"
+    },
+    "pegawai": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pegawai.pegawai",
+      "inversedBy": "pegawais"
+    }
+  }
+}
